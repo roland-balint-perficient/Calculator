@@ -1,0 +1,63 @@
+# Build results
+[Bb]in/
+[Oo]bj/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Visual Studio Code workspace settings
+.vscode/
+
+# Visual Studio 2015/2017 cache/options directory
+.vs/
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# NuGet Packages
+*.nupkg
+# The packages folder can be ignored because of Package Restore
+**/packages/*
+!**/packages/build/
+!**/packages/repositories.config
+
+# Microsoft Azure Web App publish settings
+PublishProfiles/
+
+# Resharper
+*.DotSettings.user
+
+# Rider
+.idea/
+
+# Backup & report files from converting an old project file
+UpgradeLog*.XML
+Backup*/
+*.bak
+
+# SQL Server files
+*.mdf
+*.ldf
+
+# Entity Framework
+*.edmx.diagram
+*.edmx.sql
+
+# TFS
+$tf/
+
+# JetBrains Rider
+.idea/
+
+# Others
+*.log
+*.vspscc
+*.vssscc
+_ReSharper*/
