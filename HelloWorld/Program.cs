@@ -1,12 +1,13 @@
-﻿using System;
-
-
-namespace HelloWorld {
+﻿namespace HelloWorld {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Controller controller = new Controller();  // model and view "inside" controller
+
+            controller.DoOperation();
+
+            controller.ShowResult();
         }
     }
 }
