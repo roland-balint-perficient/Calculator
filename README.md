@@ -1,4 +1,4 @@
-# HelloWorld
+# Calculator
 A project to try out C# features.
 
 ## Resources used
