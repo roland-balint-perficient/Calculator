@@ -1,4 +1,8 @@
-﻿namespace HelloWorld
+﻿using Calculator.Model;
+using Calculator.View;
+
+
+namespace Calculator.Controller
 {
     /// <summary>
     /// Acts as an intermediary between the Model and the View. It handles user input and updates the Model accordingly
@@ -7,14 +11,14 @@
     /// </summary>
     internal class Controller
     {
-        private Model model;
-        private View view;
+        private Model.Model model;
+        private View.View view;
 
 
         public Controller()
         {
             // initialize view (need to do first, since we need to read data from view to initialize model)
-            this.view = new View();
+            view = new View.View();
 
             // gather the necessary info and initialize model
             Console.WriteLine("Enter the first number:");
@@ -26,7 +30,7 @@
             Console.WriteLine("Enter the operation; one of: + - * /");
             Operation operation = ReadOperation();
 
-            this.model = new Model(numberOne, numberTwo, operation);
+            model = new Model.Model(numberOne, numberTwo, operation);
         }
 
 
@@ -51,7 +55,7 @@
         private int ReadInt32()
         {
             int number;
-            if (!Int32.TryParse(view.ReadText(), out number))
+            if (!int.TryParse(view.ReadText(), out number))
             {
                 throw new BadInputException();
             }

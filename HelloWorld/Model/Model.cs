@@ -1,4 +1,4 @@
-﻿namespace HelloWorld
+﻿namespace Calculator.Model
 {
     enum Operation : byte { Add, Subtract, Multiply, Divide }
 
@@ -54,19 +54,19 @@
             switch (operation)
             {
                 case Operation.Add:
-                    this.result = numberOne + numberTwo;
+                    result = numberOne + numberTwo;
                     break;
                 case Operation.Subtract:
-                    this.result = numberOne - numberTwo;
+                    result = numberOne - numberTwo;
                     break;
                 case Operation.Multiply:
-                    this.result = numberOne * numberTwo;
+                    result = numberOne * numberTwo;
                     break;
                 case Operation.Divide:
-                    this.result = numberOne / numberTwo;
+                    result = numberOne / numberTwo;
                     break;
                 default:
-                    this.result = null;
+                    result = null;
                     throw new NotImplementedException();
             }
         }

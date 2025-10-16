@@ -1,4 +1,4 @@
-﻿namespace HelloWorld
+﻿namespace Calculator
 {
     /// <summary>
     /// Custom exception for bad user input.
